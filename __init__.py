@@ -25,7 +25,7 @@ class DocumentaryCentralSkill(OVOSCommonPlaybackSkill):
 
     def initialize(self):
         url = "https://www.youtube.com/channel/UCp4wHZCrDhITkiUILOd4gRw"
-        bootstrap = f"https://raw.githubusercontent.com/OpenJarbas/streamindex/main/{self.archive.db.name}.json"
+        bootstrap = "https://github.com/JarbasSkills/skill-documentary-central/raw/dev/bootstrap.json"
         self.archive.bootstrap_from_url(bootstrap)
         self.archive.monitor(url)
         self.archive.setDaemon(True)
